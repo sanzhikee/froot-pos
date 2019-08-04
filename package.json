@@ -1,6 +1,6 @@
 {
   "name": "froot-pos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Froot pos terminals in shops",
   "main": "main.js",
   "scripts": {
@@ -22,10 +22,7 @@
   "build": {
     "appId": "com.electron.froot-pos-app",
     "win": {
-      "icon": "static/icon.png",
-      "publish": [
-        "github"
-      ]
+      "icon": "static/icon.png"
     }
   },
   "dependencies": {
