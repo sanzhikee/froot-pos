@@ -8,7 +8,9 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build",
+    "prod": "set GH_TOKEN=9f79f7cafe1b5afc03f882f67794bf25542b0184&&electron-builder --publish always"
   },
   "keywords": [],
   "author": "Froot-team",
@@ -20,7 +22,14 @@
   "build": {
     "appId": "com.electron.froot-pos-app",
     "win": {
-      "icon": "static/icon.png"
+      "icon": "static/icon.png",
+      "publish": [
+        "github"
+      ]
     }
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7",
+    "electron-updater": "^4.1.2"
   }
 }
