@@ -1,6 +1,6 @@
 {
   "name": "froot-pos",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Froot pos terminals in shops",
   "main": "main.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
     "release": "build",
-    "prod": "set GH_TOKEN=f4a8be4cf7305bee53c108e9f7a31f14ac2c889b&&electron-builder --publish always"
+    "prod": "set GH_TOKEN=bc38681f99115cc634db7c7ddd101ebf6041134d&&electron-builder --publish always"
   },
   "keywords": [],
   "author": "Froot-team",
